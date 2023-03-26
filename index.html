@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SH Week 3 Task</title>
+</head>
+<style>
+    *{
+        background-color: rosybrown;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        line-height:40px;
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+    .navbar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px;
+        position: relative;
+    }
+    .navbar ul{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        margin-top: 10px ;
+    }
+    .navbar ul li{
+        list-style: none;
+        ;
+    }
+    .navbar ul li a{
+        padding: 10px 18px;
+        border-radius: 5px;
+        font-family: sans-serif;
+        font-size: 16px;
+        color: bisque;
+        text-decoration: none;
+    }
+    .navbar ul li a:hover{
+        background-color: lightslategray;
+    }
+
+    h1{
+        text-align: center;
+    }
+    #Sign-Up{
+       text-align: center;
+       display: block;
+    }
+    input{
+        width: 80%;
+        height: 50px;
+        margin: 5px 5px;
+        font-size: 14px;
+        border-radius: 10px;
+        border: 2px solid rgb(197, 204, 166);
+    }
+    button{
+        color: brown;
+        background-color: moccasin;
+        padding: 1px;
+        border: 4px solid goldenrod;
+        border: 4px;
+        border-radius: 4px;
+        height: 34;
+    }
+    .content{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+h1{
+    background-color: rgb(163, 91, 91);
+    color: darkkhaki;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+    
+</style>
+<body>    
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Collections</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+    <h1>Rameen Couture</h1>
+    <h3>Here at Rameen Couture, we want to provide you with timeless pieces that you will love to wear.</h3>
+    <h4>Mission and Vision statement</h4>
+<p>MISSION: Our mission is to create a clothing company that can offer quality and value to the consumer.</p>
+<p>VISION: To create a fashion pieces at affordable prices for consumers</p>
+<img src="./photo-1600502281976-e0e31b326509[1].jpg" alt="clothes " width="250" height="200">
+<p id="Sign-Up">Sign up for subscriber-only discounts, get first look at newly-designed fashion pieces and fashion tips and tricks!
+      </p>
+      <h3>Sign-Up</h3>
+      <form action="" onsubmit="myFunction()" >
+        <input type="text" name="name" id="name" placeholder="Your Name" required> <br> 
+        <input type="email" name="email" id="email" placeholder="Your Email" required > <br>
+        <button>SUBSCRIBE</button>
+      </form>
+    </div>
+      <script>
+        function myFunction(){
+            alert("The form was successfully submitted!")
+        }
+      </script>
+      </div>
+</body>
+</html>
